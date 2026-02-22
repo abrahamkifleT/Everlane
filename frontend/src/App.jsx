@@ -1,8 +1,7 @@
 import React from 'react';
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import './App.css';
+import Header from './components/layout/Header';
+import Navbar from './components/layout/Navbar';
+import AppRoutes from './app/routes';
 
 function App() {
   return (
@@ -10,8 +9,7 @@ function App() {
       <Header />
       <Navbar />
       <main>
-        <Hero />
-        {/* Additional sections like Collections or Featured Products could go here */}
+        <AppRoutes />
       </main>
 
       <footer className="footer">
